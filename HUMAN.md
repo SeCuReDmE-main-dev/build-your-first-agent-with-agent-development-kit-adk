@@ -15,6 +15,35 @@ When returning after an interruption, check the repository status before editing
 
 Current next action: continue the course. This milestone has enough evidence: two teaching prompts worked, and later failures were upstream `503` model saturation.
 
+## Model configuration milestone
+
+For the next lesson, open `docs/13-task-specific-model-configuration.md`, then
+compare `model_configuration_demo/profiles.py` with
+`model_configuration_demo/agent.py`. The first file answers “which controls fit
+this task?” and the second answers “which agent receives that profile?”
+
+The factual and creative profiles are deliberately different. Their offline
+tests do not spend tokens or require an API key. The configured model names are
+candidates to verify before a live run, and safety filtering must not be confused
+with factual accuracy.
+
+## Planning and contract-goal milestone
+
+Read `docs/14-planning-contract-goal-agent.md`, then compare
+`contract_goal_training/contracts.py` and `agent.py`. The first file protects
+evidence and lifecycle state; the second applies the Google ADK planning lesson.
+This is the Google implementation exercise. The future Codex Spark operator is
+configured separately in the case-study repository and has not been launched.
+
+## Session-state milestone
+
+Read `docs/15-session-state-programmatic-control.md` after the planning note.
+The practical anchor is `output_key="contract_opportunity_assessment"` in
+`contract_goal_training/agent.py`: ADK can save the agent's final response into
+`session.state`, while `contracts.py` keeps lifecycle validation separate from
+conversation history. This is documentation of the session-state pattern, not a
+new production memory system.
+
 ## Identity milestone
 
 The internal ADK name is now `math_tutor_agent`, while the Python entry-point variable remains `root_agent`. Its description tells another agent when delegation would be useful. Its instruction makes it a generic mathematics tutor for learners at any level, with particular strength in fractal geometry, neutrosophic mathematics, and applied plithogeny. It teaches step by step, defines symbols, uses worked examples, asks for missing information, and ends with one short comprehension check.
