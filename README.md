@@ -44,4 +44,4 @@ This public repository contains no API key, private conversation, learner data, 
 
 ## Status
 
-The agent scaffold, public import, and transformed mathematics-tutor identity have been verified locally. ADK loaded `math_tutor_agent`, and the first algebra and fractal-dimension tests answered correctly. After repeated upstream `503 UNAVAILABLE` high-demand responses on later tests, the model was moved to the lighter `gemini-3.1-flash-lite`, which responded successfully in a direct availability check. Teaching quality remains to be checked again in ADK Web after reload.
+The agent scaffold, public import, and transformed mathematics-tutor identity have been verified locally. ADK loaded `math_tutor_agent`, and the first algebra and fractal-dimension tests answered correctly. After repeated upstream `503 UNAVAILABLE` high-demand responses on later tests, the model was moved to the lighter `gemini-3.1-flash-lite`, which responded successfully in a direct availability check. This is enough evidence for the course milestone; later reuse should retest once the model service is stable.

@@ -13,7 +13,7 @@ The important lesson is the separation of responsibilities:
 
 When returning after an interruption, check the repository status before editing, reopen `agent.py`, and change only one concept at a time. Record what was observed separately from what is still expected.
 
-Current next action: refresh or restart ADK Web if needed, then run one controlled mathematics conversation and record the prompt, observable response, model, and limitation without recording credentials.
+Current next action: continue the course. This milestone has enough evidence: two teaching prompts worked, and later failures were upstream `503` model saturation.
 
 ## Identity milestone
 

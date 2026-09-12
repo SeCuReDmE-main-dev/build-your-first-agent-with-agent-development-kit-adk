@@ -30,7 +30,7 @@ Only the public `Agent` import and the agent's `name`, `description`, and `instr
 - Later neutrosophic-set attempts reached the configured model, but returned `503 UNAVAILABLE` because the model was experiencing high demand.
 - A direct availability check confirmed `gemini-3.1-flash-lite`, `gemini-3.5-flash-lite`, `gemini-flash-lite-latest`, and `gemini-3.5-flash` could answer a minimal prompt at the time of the check.
 
-The identity and integration path are therefore observed. Response quality is partially verified for simple algebra and fractal-dimension explanations and should be checked again in ADK Web after the lighter-model change.
+The identity and integration path are therefore observed. Response quality is sufficiently verified for this course milestone through two successful teaching prompts. Later `503 UNAVAILABLE` responses are recorded as model-service saturation, not as an ADK or agent-code failure.
 
 ## Limitation
 
@@ -40,4 +40,4 @@ No personal book, research file, project data, or private Drive content is part 
 
 ## Next action
 
-Refresh or restart ADK Web if needed, retry one controlled conversation, then record only the observable teaching behavior. Do not store credentials, private prompts, or raw model logs.
+Continue the course. If this agent is reused later, run one fresh controlled conversation after the model service stabilizes. Do not store credentials, private prompts, or raw model logs.
