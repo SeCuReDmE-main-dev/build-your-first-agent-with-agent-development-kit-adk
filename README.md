@@ -36,7 +36,7 @@ Then open `http://127.0.0.1:8000`.
 
 ## Learning checkpoint
 
-The first milestone is deliberately narrow: create one root agent, authenticate locally, and launch ADK Web. The identity milestone then separates the ADK entry-point variable (`root_agent`) from the internal agent name (`learning_continuity_agent`), the routing description, and the behavioral instruction. Later experiments can add tools, sessions, memory, evaluation, and structured handoffs one concept at a time.
+The first milestone is deliberately narrow: create one root agent, authenticate locally, and launch ADK Web. The transformation milestone turns it into a generic mathematics tutor with particular strength in fractal geometry, neutrosophic mathematics, and applied plithogeny. It separates the ADK entry-point variable (`root_agent`) from the internal agent name (`math_tutor_agent`), the routing description, and the behavioral instruction. Later experiments can add tools, source retrieval, sessions, memory, evaluation, and structured handoffs one concept at a time.
 
 ## Security boundary
 
@@ -44,4 +44,4 @@ This public repository contains no API key, private conversation, learner data, 
 
 ## Status
 
-The agent scaffold and local ADK server have been verified. A controlled model-response test remains the next evidence checkpoint.
+The agent scaffold, public import, and transformed mathematics-tutor identity have been verified locally. ADK loaded `math_tutor_agent`, and the first algebra test answered correctly. The model was then pinned from `gemini-flash-latest` to `gemini-2.0-flash` after repeated upstream `503 UNAVAILABLE` high-demand responses on later tests. Teaching quality remains to be checked again after the local server reloads the pinned model.
