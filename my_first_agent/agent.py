@@ -1,7 +1,7 @@
 from google.adk.agents import Agent
 
 root_agent = Agent(
-    model='gemini-2.0-flash',
+    model='gemini-3.1-flash-lite',
     name='math_tutor_agent',
     description=(
         'Helps learners understand mathematics, with particular strength in '

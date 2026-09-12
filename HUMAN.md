@@ -23,4 +23,4 @@ No personal book, research file, project data, or private Drive content is used 
 
 ## Model stability note
 
-The first local algebra test worked with `gemini-flash-latest`, but later tests received temporary upstream `503 UNAVAILABLE` high-demand errors. The agent now pins `gemini-2.0-flash` to reduce variability while learning the ADK mechanics.
+The first local algebra and fractal-dimension tests worked, but later tests received temporary upstream `503 UNAVAILABLE` high-demand errors. A direct availability check confirmed that `gemini-3.1-flash-lite` responds now, so the agent uses that lighter model while learning the ADK mechanics.

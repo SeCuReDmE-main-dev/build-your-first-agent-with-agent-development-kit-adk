@@ -10,7 +10,7 @@ Transform the generic starter agent into a reusable tutor for any learner. The t
 
 ## Smallest code change
 
-Only the public `Agent` import and the agent's `name`, `description`, and `instruction` changed at first. The required Python entry point remains `root_agent`. After one successful test and repeated temporary upstream `503 UNAVAILABLE` high-demand responses, the model was pinned from `gemini-flash-latest` to `gemini-2.0-flash` for a more stable learning session.
+Only the public `Agent` import and the agent's `name`, `description`, and `instruction` changed at first. The required Python entry point remains `root_agent`. After successful tests and repeated temporary upstream `503 UNAVAILABLE` high-demand responses, the model was moved from `gemini-flash-latest` through `gemini-2.0-flash` to the lighter `gemini-3.1-flash-lite` for a more stable learning session.
 
 ## Intended behavior
 
@@ -26,9 +26,11 @@ Only the public `Agent` import and the agent's `name`, `description`, and `instr
 - `python -m py_compile my_first_agent/agent.py` completed successfully.
 - ADK loaded the package and identified the responding author as `math_tutor_agent`.
 - The prompt `Solve 2x + 5 = 13 step by step.` returned the correct solution, including isolation of `2x`, division by `2`, and a check that `x = 4`.
-- Two later fractal-dimension attempts reached the configured model, but both returned `503 UNAVAILABLE` because the model was experiencing high demand.
+- The prompt `Explain fractal dimension to a beginner with one simple example.` returned a Sierpinski-triangle explanation with dimension between `1` and `2`.
+- Later neutrosophic-set attempts reached the configured model, but returned `503 UNAVAILABLE` because the model was experiencing high demand.
+- A direct availability check confirmed `gemini-3.1-flash-lite`, `gemini-3.5-flash-lite`, `gemini-flash-lite-latest`, and `gemini-3.5-flash` could answer a minimal prompt at the time of the check.
 
-The identity and integration path are therefore observed. Response quality is partially verified for a simple algebra explanation and should be checked again after the pinned-model change.
+The identity and integration path are therefore observed. Response quality is partially verified for simple algebra and fractal-dimension explanations and should be checked again in ADK Web after the lighter-model change.
 
 ## Limitation
 
