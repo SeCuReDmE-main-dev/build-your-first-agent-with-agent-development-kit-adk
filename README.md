@@ -36,7 +36,7 @@ Then open `http://127.0.0.1:8000`.
 
 ## Learning checkpoint
 
-The first milestone is deliberately narrow: create one root agent, authenticate locally, launch ADK Web, and verify one controlled response. Later experiments can add tools, sessions, memory, evaluation, and structured handoffs one concept at a time.
+The first milestone is deliberately narrow: create one root agent, authenticate locally, and launch ADK Web. The identity milestone then separates the ADK entry-point variable (`root_agent`) from the internal agent name (`learning_continuity_agent`), the routing description, and the behavioral instruction. Later experiments can add tools, sessions, memory, evaluation, and structured handoffs one concept at a time.
 
 ## Security boundary
 

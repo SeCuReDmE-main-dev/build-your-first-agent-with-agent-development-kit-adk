@@ -14,3 +14,7 @@ The important lesson is the separation of responsibilities:
 When returning after an interruption, check the repository status before editing, reopen `agent.py`, and change only one concept at a time. Record what was observed separately from what is still expected.
 
 Current next action: run one controlled conversation and record the prompt, observable response, model, and limitation without recording credentials.
+
+## Identity milestone
+
+The internal ADK name is now `learning_continuity_agent`, while the Python entry-point variable remains `root_agent`. Its description tells another agent when delegation would be useful. Its instruction tells this agent how to behave: explain plainly, connect the lesson to the learner's project, distinguish evidence from ideas, and finish with one next learning action.

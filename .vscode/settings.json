@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    "**/.mypy_cache": true,
+    "**/__pycache__": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.mypy_cache/**": true,
+    "**/.venv/**": true,
+    "**/.venv311/**": true,
+    "**/__pycache__/**": true
+  },
+  "search.exclude": {
+    "**/.mypy_cache": true,
+    "**/.venv": true,
+    "**/.venv311": true,
+    "**/__pycache__": true
+  },
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv311\\Scripts\\python.exe"
+}
