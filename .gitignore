@@ -1,0 +1,11 @@
+.venv/
+.venv311/
+.env
+**/.env
+.adk/
+**/.adk/
+__pycache__/
+*.log
+.mypy_cache/
+.qodo/
+configure_key_local.py
